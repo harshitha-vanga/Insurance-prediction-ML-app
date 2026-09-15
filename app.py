@@ -43,7 +43,7 @@ st.write(df.head())
 st.sidebar.title("Fill Customer Details")
 st.sidebar.image(img_url)
 
-for index,col_name in enmuerate(X.columns):
+for index,col_name in enumerate(X.columns):
   min_v = X[col_name].min()
   max_v = X[col_name].max()
   if col_name != "Previous_Insurance":
